@@ -1,8 +1,29 @@
-# React + Vite
+# About the Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```
+1. I fetched the data of quiz from the API provided. Took help of Youtube videos to set it up as I needed backend for it to work (server.js) to remove CORS error.
+```
 
-Currently, two official plugins are available:
+```
+2. Added funtionality to click on option. If right it'll highlight green and if wrong then red.
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+3. When anyone selects wrong option, the correct answer automatically gets highlighted in 'Blue'.
+```
+
+```
+4. At the end of the quiz, the final score is shown out of 10.
+```
+
+```
+5. Made a simplistic UI with responsiveness and functionalities as asked.
+```
+
+```
+TECH STACK -- React JS & Tailwind CSS
+```
+
+
+                  --- THANK YOU ---
+
