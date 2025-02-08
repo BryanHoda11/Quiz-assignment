@@ -35,11 +35,11 @@ function App() {
 
   return (
     <>
-      <div className="quiz-container bg-white mx-auto h-auto w-1/2 my-10 p-5 rounded-xl shadow-md shadow-purple-600">
+      <div className="quiz-container bg-white mx-auto h-auto w-full sm:w-[80%] lg:w-1/2 my-10 p-5 rounded-xl shadow-md shadow-purple-600">
         <h2 className='text-center text-purple-500 text-xl font-semibold font-sans'>Quiz Assignment</h2>
         <hr className='my-5 w-[90%] mx-auto h-[0.5px] bg-purple-700' />
 
-        <div className="faq w-[90%] mx-auto">
+        <div className="faq w-full sm:w-[90%] mx-auto">
           {Questions.length === 0 ? (
             <p className='text-center text-lg my-4'>Loading...</p>
           ) : (
@@ -69,8 +69,9 @@ function App() {
         </div>
 
         {Questions.length > 0 && Object.keys(selectedOption).length === totalQuestions && (
-          <div className="text-center text-xl bg-white p-10 font-bold text-purple-600">
-            🎉Congratulations Quiz Completed! You Scored: {score} / {totalQuestions}
+          <div className="text-center flex flex-col items-center sm:text-lg bg-white sm:p-10 font-bold text-purple-600">
+            <p>🎉Congratulations Quiz Completed!</p>
+            <p>You Scored: {score} / {totalQuestions}</p>
           </div>
         )}
 
